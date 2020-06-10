@@ -35,13 +35,26 @@
   </div>
 <script>
   var input = document.getElementById("emailField");
+  input.addEventListener("click",function(){
+    document.getElementById("error").style.display = "none";
+    document.getElementById("provide").style.display = "none";
+  })
   function myFunction() {
-   if (!input.checkValidity()) {
+    if (input.value === "") {
+      document.getElementById("error").style.display = "block";
+     document.getElementById("provide").style.display = "block";
+    }
+  else{
+    if (!input.checkValidity()) {
      document.getElementById("error").style.display = "block";
      document.getElementById("provide").style.display = "block";
-     
+   }
+   else{
+    document.getElementById("error").style.display = "none";
+    document.getElementById("provide").style.display = "none";
    }
   }
+}
 </script>
 </body>
 </html>
