@@ -1,0 +1,132 @@
+body,html{
+  margin: 0px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.background{
+  background-image: url(images/bg-pattern-desktop.svg);
+  height: 100vh;
+  padding-left: 8%;
+}
+
+.ldn-img{
+  float: right;
+  width: 41%;
+  height: 100vh;
+  object-fit: cover;
+}
+.ldn-img1{
+  display: none;
+}
+section{
+  padding-top: 2%;
+  width: 36%
+}
+
+h1{
+  letter-spacing: 14px;
+  margin: 1.5% 0;
+  line-height: 1.3;
+  font-size: 37px;
+  color: hsl(0, 6%, 24%);
+  padding: 17% 0 2% 0;
+}
+h1 span{
+  color: hsl(0, 36%, 70%);
+  font-weight: 100;
+} 
+p{
+  color: hsl(0, 36%, 70%);
+  line-height: 4.2vh;
+  padding-top: 1.2%;
+  font-size: 16px;
+}
+
+input{
+  outline: none;
+  border: 1px solid hsl(0, 36%, 70%);
+  padding: 3% 1% 3% 5%;
+  border-radius: 50px;
+  position: absolute;
+  width: 85%;
+  color: black;
+  font-weight: 700;
+  background-color: inherit;
+  opacity: 0.7;
+}
+input:valid{
+  border: 1px solid hsl(0, 36%, 70%);
+}
+input:invalid{
+  border: 2px solid hsl(0, 93%, 68%);
+
+}
+.logo{
+  width: 150px;
+  padding-top: 4%;
+}
+#okButton{
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+  padding: 1.5% 9% 3.9% 9%;
+  border-radius: 34px;
+  box-shadow: -1px 15px 20px 0px hsla(0, 0%, 81%, 0.56);
+  position: absolute;
+  z-index: 2;
+  left: 76%;
+  cursor: pointer;
+}
+span{
+  color: hsl(0, 93%, 68%);
+  color: hsl(0, 36%, 70%);
+  color: hsl(0, 6%, 24%);
+}
+form{
+  position: relative;
+}
+form p{
+  color: hsl(0, 93%, 68%);
+  font-size: 1.2vw;
+  padding-top: 1.2%;
+  padding-left: 5%;
+  margin-top: 11%;
+  position: absolute;
+  display: none;
+}
+#error{
+  left: 68%;
+  z-index: 2;
+  position: absolute;
+  margin: 2.5% 0;
+  display: none;
+}
+
+
+@media screen and (max-width: 500px){
+  .ldn-img{
+    display: none;
+  }
+  .ldn-img1{
+    display: block;
+    width: 100%;
+  }
+  .logo{
+    padding: 4%;
+    width: 120px;
+  }
+  .background{
+    padding-left: 0%;
+    width: fit-content  ;
+  }
+  p{
+    font-size: 4vw;
+  }
+  input{
+    position: relative;
+  }
+  section{
+    width: 86%;
+    margin: auto;
+    text-align: center;
+  }
+}

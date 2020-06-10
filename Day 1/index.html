@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="images/favicon-32x32.png" rel="icon">
+  <link href="style.css" rel="stylesheet">
+  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="background">
+    <img class="logo" src="images/logo.svg">
+    <img class="ldn-img" src="images/hero-desktop.jpg">
+    <img class="ldn-img1" src="images/hero-mobile.jpg">
+    <section>
+      <h1><span>WE'RE</span><br/>COMING<br>SOON</h1>
+      <p>Hello fellow shoppers! We're currently building our new 
+        fashion store. Add your email below to stay up-to-date with 
+        annoucements and our launch deals.
+      </p>
+      <form id="signUpForm">
+        <input type="email" id="emailField" placeholder="Email Address" >
+        <img src="images/icon-error.svg" id="error">
+        <img src="images/icon-arrow.svg" id="okButton" onclick="myFunction()">
+        <p id="provide">Please provide a valid email</p>
+      </form>
+    </section>
+  </div>
+<script>
+  var input = document.getElementById("emailField");
+  function myFunction() {
+   if (!input.checkValidity()) {
+     document.getElementById("error").style.display = "block";
+     document.getElementById("provide").style.display = "block";
+     
+   }
+  }
+</script>
+</body>
+</html>
