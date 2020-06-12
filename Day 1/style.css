@@ -68,7 +68,7 @@ input:invalid{
 }
 #okButton{
   background-image: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
-  padding: 2.5% 9% 3% 9%;
+  padding: 1.5% 9% 3.9% 9%;
   border-radius: 34px;
   box-shadow: -1px 15px 20px 0px hsla(0, 0%, 81%, 0.56);
   position: absolute;
@@ -128,5 +128,16 @@ form p{
     width: 86%;
     margin: auto;
     text-align: center;
+  }
+  #error{
+    display: block;
+    top: 5%;
+    bottom: 5%;
+    left: 66%;
+    margin: auto 0;
+  }
+  #provide{
+    font-size: 15px;
+    margin: 0;
   }
 }
