@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Css -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Import Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Fylo data storage component</title>
+</head>
+<body>
+  <main>
+    <div class="components">
+      <div class="logo-icons">
+        <div class="fylo-logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <div class="icons">
+              <button type="button" class="icon-individual" name="icon_document" aria-label="icon_document">
+                  <img src="images/icon-document.svg" alt="icon_document">
+              </button>
+              <button type="button" class="icon-individual" name="icon_folder" aria-label="icon_folder">
+                <img src="images/icon-folder.svg" alt="icon_folder">
+              </button>
+              <button type="button" class="icon-individual" name="icon_upload" aria-label="icon_upload">
+                <img src="images/icon-upload.svg" alt="">
+              </button>
+        </div>
+      </div>
+    </div>
+    <div class="memory-status">
+      <h1 class="text">You’ve used <span>815 GB</span> of your storage </h1>
+      <div class="bar">
+        <div class="status">
+          <div class="pointer">
+
+          </div>
+        </div>
+      </div>
+      <div class="popup">
+        <h1 id="left">185</h1> 
+        <h1 class="gb-left">GB LEFT</h1>
+        <div class="triangle">
+
+        </div>
+      </div>
+      <div class="min-max">
+        <h1 class="min">0GB</h1>
+        <h1 class="max">1000GB</h1>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/rexyagami" target="_blank">Rex Yagami</a>.
+  </div>
+</body>
+</html>
