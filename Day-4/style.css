@@ -230,8 +230,12 @@ footer section{
     display: block;
     margin-bottom: 20px;
   }
+  #adiddas{
+    margin: 0;
+  }
   .shoe,main section div{
     width: 100%;
+    margin: 40px 0;
   }
   .how-we-work{
     border-radius: 0;
