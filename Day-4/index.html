@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image" href="images/favicon.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Orbitron:wght@400;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Kicks Webpage</title>
+</head>
+<body onload="checkValue()">
+  <nav>
+    <img src="images/logo.svg">
+    <ul>
+      <li><a href="#landing">Home</a></li>
+      <li><a href="#work">How we work</a></li>
+      <li><a href="#vendors">Our Vendors</a></li>
+      <li><a href="#testimony">Testimonies</a></li>
+    </ul>
+  </nav>
+
+  <header id="landing">
+    <div class="landing">
+      <div class="text">
+        <img src="images/logo.svg">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+      <div class="shoe">
+        <img src="./images/air-jordan-4-retro-se-shoe-qcHB1l (2) 1.png">
+        <p>20% off on all kicks</p>
+        <button>Order now</button>
+      </div>
+    </div>
+  </header>
+
+    <section id="work" class="how-we-work">
+      <h2>How Kicks Works</h2>
+      <section class="display-flex">
+        <div class="mySlides fade">
+          <p id="letter">1</p>
+          <img src="./images/computer.png">
+          <p>Place you order on our app or website</p>
+        </div>
+
+        <div class="mySlides fade">
+          <p id="letter">2</p>
+          <img id="bag" src="./images/bag.png">
+          <p>Start processing your order from a warehouse closet to you</p>
+        </div>
+
+        <div class="mySlides fade">
+          <p id="letter">3</p>
+          <img src="./images/pngguru 2.png">
+          <p>Place you order on our app or website</p>
+        </div>
+      </section>
+
+      
+      <div id="displayNone">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </section>
+
+
+  <main id="vendors">
+    <h2>Our Vendors</h2>
+    <section>
+      <div id="puma">
+        <img id="logo" src="./images/Puma_logo 1.png">
+        <img src="./images/Sky-Modern-Easter-Basketball-Shoes 1.svg">
+        <p>Puma Collection</p>
+      </div>
+
+    
+
+      <div id="adiddas">
+        <img id="logo" src="./images/Adidas_Logo 1.svg">
+        <img src="./images/Lite_Racer_Adapt_Shoes_Grey_FV8920_01_standard 1.svg">
+        <p>Adidas Collection</p>
+      </div>
+     
+      <div>
+        <img id="logo" src="./images/nike logo.png">
+        <img src="./images/custom-pg4-by-you 1.svg">
+        <p>Nike Collection</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="testimony" class="testimony">
+    <div>
+      <img src="./images/text1.png">
+      <section>
+        <h2>Geek</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad deserunt sed optio hic tempora, a, sapiente aliquid neque assumenda nobis possimus quaerat dolorem ipsam dolorum dolore harum quasi placeat! Suscipit?</p>
+      </section>
+      
+    </div>
+
+    <div>
+      <img src="./images/text2.png">
+      <section>
+        <h2>Ifihan</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi unde accusamus quos quasi laborum facere. Quisquam architecto tempore corporis fuga enim laudantium velit ipsa error unde voluptatem porro, sunt dolor!</p>
+      </section>
+      </div>
+  </div>
+
+
+  <footer>
+    <img id="logo" src="./images/logo.svg">
+
+    <section>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+    </section>
+
+  </footer>
+  <script>
+    var slideIndex = 0;
+    function checkValue(){
+    if(window.innerWidth <= '600'){
+      var slideIndex = 0;
+    showSlides();
+    }
+    else 
+    {
+      var slides = document.getElementsByClassName("mySlides");
+      slides.style.display = "block";
+    }
+    }
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 8000); 
+    }
+    </script>
+</body>
+</html>
