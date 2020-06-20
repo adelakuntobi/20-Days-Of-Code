@@ -1,0 +1,145 @@
+@font-face{
+  font-family: "SF UI light";
+  src: url(./Fonts/SF-UI/sf-ui-display-light-58646b33e0551.otf);
+}
+@font-face{
+  font-family: "SF UI medium";
+  src: url(./Fonts/SF-UI/sf-ui-display-medium-58646be638f96.otf);
+}
+@font-face{
+  font-family: "New York Extra Large";
+  src: url(./Fonts/new-york-extra-large-cufonfonts/NewYorkExtraLargeBold.otf);
+}
+
+body{
+  font-family: "SF UI light";
+  margin: 0;
+}
+h1,h2{
+  font-family: "New York Extra Large";
+  font-size: 48px;
+  width: 50%;
+}
+nav{
+  display: flex;
+  padding: 20px;
+  margin-left: 5%;
+}
+nav ul{
+  display: flex;
+  padding: 0;
+}
+nav div{
+  margin: auto;
+  margin-right: 0;
+}
+li{
+  list-style: none;
+  margin: 10px 20px;
+  font-size: 14px;
+  color: #585858;
+}
+nav button{
+  margin-left: 50px;
+}
+button{
+  background-color: #F2AA4C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 15px;
+}
+nav .fa{
+  color: #585858;
+}
+header{
+  padding: 0 8%;
+  display: flex;
+}
+header div{
+  padding-right: 30px;
+}
+header p{
+  line-height: 1.5;
+  font-size: 16px;
+}
+h1{
+  font-size: 13vh;
+  padding: 0 8%;
+}
+h1 span{
+  color: #F2AA4C;
+}
+
+/*Main*/
+main{
+  text-align: center;
+  padding-top: 8%;
+}
+main img{
+  padding: 10px;
+}
+main div{
+  white-space: nowrap;
+  overflow-y: hidden;
+  margin-left: 8%;
+}
+main h2{
+  margin: auto;
+}
+
+/*Build Section*/
+.build{
+  padding: 8%;
+}
+.build button{
+  display: block;
+  margin: auto;
+  margin-top: 8%;
+}
+.display-flex section{
+  width: 40%;
+  margin: auto 0 auto auto;
+}
+
+#people{
+  width: 50%;
+  object-fit: contain;
+}
+.info img{
+  object-fit: none;
+  padding: 0 20px;
+}
+.partners{
+  padding: 30px 8%;
+}
+
+.partners img{
+  margin: auto;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+  display: flex;
+  padding: 10px 8%;
+  border-top: 1px solid #F0F0F0;;
+}
+footer ul,.display-flex{
+  display: flex;
+  padding: 0;
+}
+footer img{
+  display: block;
+  margin: auto;
+  margin-right: 0;
+}
