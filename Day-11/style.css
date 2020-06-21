@@ -68,10 +68,12 @@ h1{
   font-size: 13vh;
   padding: 0 8%;
 }
-h1 span{
+span{
   color: #F2AA4C;
 }
-
+.w-70{
+  width: 70%;
+}
 /*Main*/
 main{
   text-align: center;
@@ -111,16 +113,44 @@ main h2{
   object-fit: none;
   padding: 0 20px;
 }
-.partners{
+.partners,.sounds{
   padding: 30px 8%;
 }
-
+.sounds img{
+  margin: 1em 20px auto auto;
+  object-fit: contain;
+}
+.sounds p{
+  line-height: 1.5;
+  font-size: 25px;
+  width: 60%;
+}
 .partners img{
   margin: auto;
   display: inline-block;
 }
-
-
+ .realize,.position-relative{
+  padding-left: 8% !important;
+  /* width: 109%; */
+} 
+.realize div{
+  width: 50%;
+  margin: auto;
+}
+.realize h2,.first h2{
+  width: 100%;
+}
+.position-absolute{
+  position: absolute;
+  bottom: -10px;
+  left: 37%;
+}
+.position-relative div{
+  width: 40%;
+}
+.bg{
+  background:  linear-gradient(180deg, #F9F9F9 22.12%, rgba(249, 249, 249, 0) 100%);
+}
 
 
 
@@ -137,9 +167,42 @@ footer{
 footer ul,.display-flex{
   display: flex;
   padding: 0;
+  position: relative;
+  overflow: hidden;
 }
 footer img{
   display: block;
   margin: auto;
   margin-right: 0;
+}
+
+
+@media (max-width: 700px){
+  header,.display-flex{
+    display: block;
+  }
+  h1,h2{
+    width: 80%;
+  }
+  .w-70,footer ul,.display-flex section,.sounds p,.realize div,.position-relative div,.position-relative div img{
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+  .realize,.position-relative{
+    padding: 5% !important;
+  }
+  .sounds p{
+    font-size: 18px;
+  }
+  #people,nav ul,.position-absolute{
+    display: none !important;
+  }
+  .partners img{
+   margin: auto;
+   display: block;
+  }
+  .the-house{
+    width: 60%;
+  }
 }
