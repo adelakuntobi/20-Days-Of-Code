@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <title>Apex-Sign In</title>
+</head>
+<body>
+  <div class="container">
+    <div class="design">
+      <img id="logo" src="./images/icons8-apex-legends-1.svg">
+      <img class="position center" src="./images/icons8-apex-legends.svg">
+      <div class="welcome center">
+        <h1>Welcome to Apex</h1>
+        <p>Banking made easy...</p>
+      </div>
+    </div>
+    <!-- <img class="bg-img" src="images/20887245704_7c60869f20_b.jpg"> -->
+    <div class="text">
+      <h2>Login to Continue</h2>
+      <form>
+      <div class="info">
+        <i class="fa fa-user"></i>
+        <input id="username" type="text" required placeholder="Username">
+      </div>
+      <div class="info">
+        <i class="fa fa-lock"></i>
+        <input id="myInput" maxlength="9" type="password" required placeholder="Password">
+        <i id="show" onclick="myFunction()" class="fa fa-eye-slash"></i>
+      </div>
+      <section>
+      <input type="checkbox"><label>Remember me</label>
+      <a>Forgot Password</a><br>
+      </section>
+      <button>LOGIN</button>
+      <p>New User? <span>Sign Up</span></p>
+      <p>or sign up using</p>
+      <img src="images/fb.png">
+      <img src="images/twitter.png">
+      <img src="images/google.png">
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+        document.getElementById("show").className = "fa fa-eye"
+      } else {
+        x.type = "password";
+       document.getElementById("show").className = "fa fa-eye-slash"
+      }
+    }
+    </script>
+</body>
+</html>

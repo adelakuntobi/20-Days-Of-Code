@@ -1,0 +1,153 @@
+body{
+  margin: 0;
+  /* background-color: #e8e8e857; */
+  font-family: 'Raleway', sans-serif;
+}
+.container{
+  display: flex;
+}
+.design{
+  float: left;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  background-color: #005787;
+}
+#logo{
+  width: 80px;
+  padding: 3%;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+.welcome{
+  z-index: 3;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+}
+.position{
+  z-index: 1;
+  width: 100%;
+}
+.text{
+  text-align: center;
+  padding: 5% 2%;
+  width: 50%;
+  background-color: #f1f8fc;
+}
+input,button{
+  width: 86%;
+  padding: 15px;
+  border-radius: 6px;
+  outline: none;
+  margin: 10px;
+  font-size: 18px;
+  border: 2px solid white;
+}
+
+
+input[type="checkbox"]{
+  width: 16px;
+  margin: 2px;
+  float: left;
+}
+h2{
+  font-size: 30px;
+}
+
+button{
+  background-color: #005787;
+  color: white;
+  width: 85%;
+  border: 2px solid #005787;
+  cursor: pointer;
+  margin-bottom: 55px;
+}
+a{
+  float: right;
+  color: #005787;
+  font-weight: 700;
+  cursor: pointer;
+}
+label{
+  float: left;
+}
+section{
+  width: 93%;
+  margin: 25px auto;
+}
+.text img{
+  border-radius: 50%;
+  width: 30px;
+  margin: 3px;
+  cursor: pointer;
+}
+.info{
+  background-color: #fff;
+  color: black;
+  border-radius: 7px;
+  padding: 5px;
+  padding-right: 5px;
+  margin: 15px 10px;
+  cursor: pointer;
+}
+.info:focus-within{
+  box-shadow: 0 0 10px 6px #0000001a;
+  outline: none;
+  /* border: 1px solid gray; */
+}
+.info input{
+  padding: 5px 0;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  width: 80%;
+}
+#username{
+  width: 85%;
+}
+.fa{
+  padding-right: 3px;
+ 
+}
+span{
+  color: #005787;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 650px){
+  
+  .container{
+    display: block;
+  }
+  .design{
+    float: none;
+    width: 100%;
+    height: 64vh;
+  }
+  input,button{
+    width: 84%;
+    font-size: 15px; 
+    border: 2px solid white;
+    padding: 10px;
+  }
+  .text{
+    width: 100%;
+    /* height: 80vh; */
+    padding: 5% 0%;
+  }
+  section{
+    width: 92%;
+    margin: 25px auto; 
+    font-size: 13px;
+  }
+  input[type="checkbox"]{
+    margin: 0px;
+  }
+}
